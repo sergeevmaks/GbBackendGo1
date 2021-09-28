@@ -1,6 +1,8 @@
 repos:
--   repo: https://github.com/sergeevmaks/GbBackendGo1
-    rev: v0.0.1
-    hooks:
-    -   id: go-imports
-    -   id: colangci-lint
+- repo: git://github.com/dnephin/pre-commit-golang
+  rev: v0.4.0
+  hooks:
+      - id: go-fmt
+      - id: golangci-lint
+  
+
